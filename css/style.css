@@ -1,0 +1,365 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --maincolor: #4d13d1;
+    --textcolor: #000;
+    --hovercolor: #380f99;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #fbf8f3;
+}
+.head-container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+.logo {
+    width: 40%;
+}
+.myLinks {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.navigation .menu {
+    display: flex;
+}
+.navigation .menu a:not(:last-child) {
+    margin-right: 32px;
+}
+.navigation .menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.navigation .menu a:hover {
+    color: var(--maincolor)
+}
+.navigation .bttns a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navigation .bttns a#signin {
+    color: var(--textcolor);
+    margin-right: 16px;
+}
+.navigation .bttns a#signin:hover {
+    color: var(--maincolor);
+}
+.navigation .bttns a#signup {
+    color: #FFF;
+    background-color: var(--maincolor);
+    padding: 16px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+.navigation .bttns a#signup:hover {
+    background-color: var(--hovercolor);
+}
+.navigation .icon{
+    display: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .talk {
+    width: 49%;
+}
+.hero .talk .rate {
+    display: flex;
+}
+.hero .talk .rate p {
+    margin-left: 8px;
+}
+.hero .talk h1.hero-header {
+    font-size: 55px;
+}
+.hero .talk .hero-bttns {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+.hero .talk .hero-bttns a {
+    font-size: 18px;
+    font-weight: bold;
+}
+.hero .talk .hero-bttns #trial {
+    color: #FFF;
+    background-color: var(--maincolor);
+    padding: 16px;
+    border-radius: 4px;
+    margin-right: 16px;
+    text-decoration: none;
+
+}
+.hero .talk .hero-bttns #trial:hover {
+
+    background-color: var(--hovercolor);
+}
+.hero .talk .hero-bttns #example:hover {
+    color: var(--hovercolor)
+}
+.hero .talk .hero-features {
+    display: flex;
+    margin-top: 16px;
+}
+.hero .talk .hero-features div:first-child {
+    margin-right: 16px;
+}
+.hero .talk .hero-features div img {
+    width: 16px;
+    height: 16px;
+}
+.illustration {
+    margin-top: 32px;
+}
+.illustration img {
+    width: 500px;
+    height: 500px;
+}
+.container {
+    background-color: #FFF;
+}
+.why-section {
+    width: 1140px;
+    margin: 0 auto;
+}
+.why-section #why-paragraph {
+    color: var(--maincolor);
+    padding-top: 32px;
+    font-weight: bold;
+}
+.why-section h2 {
+    font-size: 30px;
+    margin-top: 16px;
+}
+.why-section .why-features {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.why-section .feature {
+    width: 30%;
+}
+.why-section .why-features .feature-head {
+    font-weight: bold;
+}
+.why-section .why-features .details {
+    margin-top: 16px;
+}
+.midSection {
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 32px;
+    border-radius: 8px;
+    padding: 0 40px;
+    height: 400px;
+    background-color: var(--maincolor);
+    display: flex;
+    justify-content: space-between;
+}
+.midSection .info {
+    color: #FFF;
+    margin-top: 8px;
+    align-self: center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.midSection .info h1 {
+    font-size: 40px;
+}
+.midSection .info a {
+    background-color: #FFF;
+    color: var(--maincolor);
+    text-decoration: none;
+    text-align: center;
+    width: 160px;
+    border-radius: 4px;
+    padding: 16px;
+    margin-top: 10px;
+}
+.midSection img {
+    margin-top: 8px;
+}
+.testimonials {
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.testimonials .card {
+    width: 30%;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.testimonials .card .person {
+    display: flex;
+    align-items: center;
+}
+.testimonials .card .person .userInfo {
+    margin: 0 8px;
+}
+.testimonials .card .person .userInfo p {
+    display: block;
+}
+.testimonials .card .person .userInfo .name {
+    color: var(--maincolor);
+    font-weight: bold;
+}
+.testimonials .card .text {
+    margin: 16px 0;
+}
+.testimonials .card a {
+    background-color: #FFF;
+    color: var(--maincolor);
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    border-radius: 4px;
+    padding: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.testimonials .card a:hover {
+    background-color: var(--maincolor);
+    color: #FFF;
+    border: 1px solid var(--maincolor);
+}
+.footer-container {
+    width: 1140px;
+    margin: 32px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container h4 {
+    margin-bottom: 8px;
+}
+.footer-container .links {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-container .links a, .footer-container p{
+    text-decoration: none;
+    color: #666;
+}
+.footer-container .links a:hover {
+    color: var(--maincolor)
+}
+@media screen and (max-width: 540px) {
+    .head-container {
+        width: 100%;
+    }
+    .navigation {
+        flex-direction: column;
+        margin-top: 0px;
+        align-items: normal;
+    }
+    .navigation .logo {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation .icon{
+        display: block;
+        cursor: pointer;
+    }
+    .myLinks {
+        display: none;
+        flex-direction: column;
+        padding: 8px 16px;
+    }
+    .navigation .menu , .navigation .bttns {
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation .bttns {
+        border-top: 1px solid #DDD;
+    }
+    .hero {
+        flex-direction: column-reverse;
+    }
+    .hero .talk .rate {
+        display: none;
+    }
+    .hero .talk h1.hero-header {
+        font-size: 30px;
+    }
+    .hero .talk .hero-bttns, .hero .talk .hero-features {
+        flex-direction: column;
+    }
+    .hero .talk .hero-bttns a {
+        width: 100%;
+        text-align: center;
+    }
+    .hero .talk .hero-bttns #trial {
+        margin-right: 0px;
+    }
+    .illustration {
+        margin-top: 16px;
+    }
+    .illustration img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .why-section {
+        width: 468px;
+    }
+    .why-section .why-features {
+        flex-direction: column;
+    }
+    .why-section .feature {
+        width: 100%;
+        margin-top: 32px;
+    }
+    .midSection {
+        width: 468px;
+        flex-direction: column;
+        height: auto;
+    }
+    .midSection .info {
+        width: 100%;
+    }
+    .testimonials {
+        width: 468px;
+        flex-direction: column;
+    }
+    .testimonials .card {
+        width: 100%;
+    }
+    .footer-container {
+        width: 468px;
+        flex-direction: column;
+    }
+    .footer-container .links {
+        width: 100%;
+    }
+    .footer-container .links a {
+        margin-top: 8px;
+    }
+} 
